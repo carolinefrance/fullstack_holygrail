@@ -1,0 +1,42 @@
+/* public/styles.css */
+/* fr is a responsive grid unit that resizes */
+.grid{
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: auto 1fr auto;
+    gap: 5px;
+    height: 90vh;
+}
+/* em is a responsive font unit; multiply number to the base font size */
+.section{
+  font-size: 2em;
+  font-weight: 800;
+}
+header, aside, article, footer{
+    border-style: solid;
+    font-size: 1em;
+}
+/* Screen areas LR */
+aside{
+  background: #98FB98;    
+}
+/* Screen area C */
+article{
+  background: #FFCCD6;    
+}
+/* Screen areas TB */
+header, footer{
+  grid-column: 1 / 4;
+  background: #94C9FA;    
+}
+
+body{
+  font-family: Arial;
+}
+button{
+    font-size: 1em;
+}
+img{
+  height: 32px;
+  width: 32px;
+}
